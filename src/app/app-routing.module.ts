@@ -7,13 +7,13 @@ import { Link1Component } from './pages/link1/link1.component';
 
 const routes: Routes = [
 	{
-		path: '',
-		loadChildren: () => import('./home/home.module').then((m) => m.HomeModule),
+		path: "",
+		loadChildren: () => import("./home/home.module").then((m) => m.HomeModule),
 	},
 	{
-		path: 'repos',
+		path: "repos",
 		loadChildren: () =>
-		  import('./repositories/repositories.module').then(
+		  import("./repositories/repositories.module").then(
 			(m) => m.RepositoriesModule
 		  ),
 	},
